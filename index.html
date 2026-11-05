@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+  Kedai Sidikalang: profil dan katalog (Proyek, tahap struktur dan gaya)
+  Catatan pemakaian AI: lihat CATATAN-AI.md
+-->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kedai Sidikalang: kopi dan kue khas Sumatra Utara. Lihat katalog dan pesan lewat WhatsApp.">
+  <title>Kedai Sidikalang | Profil dan Katalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="lewati" href="#konten">Lewati ke konten</a>
+
+  <header>
+    <div class="pita" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="merek">Kedai Sidikalang</p>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#katalog">Katalog</a></li>
+          <li><a href="#tim">Tim</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap" id="konten">
+    <section id="beranda" aria-labelledby="h-beranda">
+      <h1 id="h-beranda">Kedai Sidikalang</h1>
+      <p class="pengantar">Kopi dan kue khas Sumatra Utara, dibuat segar setiap hari.</p>
+      <p class="aksi">
+        <a class="tombol" href="#katalog">Lihat katalog</a>
+        <a class="tombol wa" data-wa target="_blank" rel="noopener">Pesan lewat WhatsApp</a>
+      </p>
+      <h2>Profil usaha</h2>
+      <p>Kedai Sidikalang adalah usaha rekaan di Medan yang menyajikan kopi arabika Sidikalang dan kue khas Sumatra Utara. Pesanan dibuat pada hari yang sama.</p>
+      <dl class="fakta">
+        <div><dt>Jenis usaha</dt><dd>Kedai kopi dan kue</dd></div>
+        <div><dt>Lokasi</dt><dd>Medan, Sumatera Utara</dd></div>
+        <div><dt>Cara pesan</dt><dd>WhatsApp, antar atau ambil</dd></div>
+      </dl>
+    </section>
+
+    <section id="katalog" aria-labelledby="h-katalog">
+      <h2 id="h-katalog">Katalog produk</h2>
+      <form class="cari" role="search" onsubmit="return false">
+        <div><label for="cari">Cari produk</label>
+          <input type="search" id="cari" placeholder="Contoh: bika, kopi, durian" autocomplete="off"></div>
+        <div><label for="kategori">Kategori</label>
+          <select id="kategori"><option value="semua">Semua kategori</option></select></div>
+      </form>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <div class="grid" id="daftar"></div>
+      <p id="kosong" class="kosong" hidden>Tidak ada produk yang cocok. Coba kata kunci lain atau pilih "Semua kategori".</p>
+      <noscript><p>Katalog membutuhkan JavaScript. Aktifkan JavaScript di Chrome.</p></noscript>
+    </section>
+
+    <aside id="tim" aria-labelledby="h-tim">
+      <h2 id="h-tim">Tim pengembang</h2>
+      <div class="tabel">
+        <table>
+          <caption class="sr">Atribusi kontribusi anggota tim</caption>
+          <thead><tr><th scope="col">Nama</th><th scope="col">NIM</th><th scope="col">Kontribusi</th></tr></thead>
+          <tbody>
+            <tr><td>Natasia Agustina Simanungkalit</td><td>250121069</td><td>Konten usaha dan data produk</td></tr>
+            <tr><td>Gomgom Simangunsong</td><td>250121082</td><td>Struktur HTML dan JavaScript</td></tr>
+            <tr><td>Jogina Rachel Diatenta Marpaung</td><td>250121091</td><td>Gaya CSS, kontak dan media sosial</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </aside>
+  </main>
+
+  <footer id="kontak">
+    <div class="pita" aria-hidden="true"></div>
+    <div class="wrap kaki">
+      <section aria-labelledby="h-kontak">
+        <h2 id="h-kontak">Hubungi kami</h2>
+        <address><p>Jl. Contoh No. 1, Medan, Sumatera Utara</p><p>Buka: Setiap hari, 08.00–21.00 WIB</p></address>
+        <p><a class="tombol wa" data-wa target="_blank" rel="noopener">Chat WhatsApp</a></p>
+      </section>
+      <section aria-labelledby="h-sosmed">
+        <h2 id="h-sosmed">Ikuti kami</h2>
+        <ul class="sosmed">
+          <li><a data-ig target="_blank" rel="noopener">Instagram</a></li>
+          <li><a data-fb target="_blank" rel="noopener">Facebook</a></li>
+          <li><a data-tt target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="hak"><small>&copy; 2026 [Nama Kelompok] &ndash; STMIK Pelita Nusantara. Usaha dan harga adalah rekaan untuk tugas kuliah.</small></p>
+  </footer>
+
+  <a class="wa-melayang" data-wa target="_blank" rel="noopener" aria-label="Chat WhatsApp">WA</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
